@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TABELA</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--cabeçalho-->
-    <section id="tabela">
-        <h1>Minha Tabela</h1>
-        <header>
-            <nav>
-                <a href="#">Tabela</a>
-                <a href="#">Rodapé</a>
-            </nav>
-        </header>
+    <section id="tabela" style="text-align: center;">
+      <h1>Minha Tabela</h1>
+      <header>
+        <nav>
+          <a href="#tabela">Tabela</a> &nbsp; &nbsp;
+          <a href="#rodapé">Rodapé</a>
+        </nav>
+      </header>
     </section>
 
     <!--Tabela-->
 
-    <section id="tabela">
-        <table border="1">
-            <thead>
-                <tr>
-                    <td>Exemplo Colspan</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tfoot>
-        </table>
+    <section id="tabela" style="margin-top: 10%;">
+      <table border="1" align="center">
+        <caption>TABELA NA AULA DE FRONT-END</caption>
+        <thead>
+          <tr>
+            <th colspan="4">Exemplo Colspan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="3">CADASTRO</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Data de Nascimento</th>
+          </tr>
+          <tr>
+            <td>José</td>
+            <td>Bonifacio</td>
+            <td>12/02/1955</td>
+          </tr>
+          <tr>
+            <td>Joaquina</td>
+            <td>Jacobina</td>
+            <td>20/09/1966</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">"Nascidos antes da década de 90"</td>
+          </tr>
+        </tfoot>
+      </table>
     </section>
-</body>
+
+    <!--rodapé-->
+        
+    <section id="rodapé" style="text-align: center; margin-top: 30%;"><HR> 
+        <footer>
+            <p>Todos os direitos reservados.</p>
+        </footer>
+    </section>
+  </body>
 </html>
